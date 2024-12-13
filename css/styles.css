@@ -1,0 +1,183 @@
+/* Colors */
+/* Font sizes */
+/* Queries */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+}
+body .ctn {
+  place-self: center;
+}
+body .ctn header {
+  display: flex;
+  justify-content: center;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+body .ctn header img {
+  width: 162px;
+  height: 44px;
+}
+body .ctn main .m-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  background-color: #eaeaea;
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+body .ctn main .m-cta-explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+body .ctn main .m-cta-explore h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+body .ctn main .m-cta-explore h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+body .ctn main .m-cta-explore h1, body .ctn main .m-cta-explore h3 {
+  margin: 0;
+}
+body .ctn main .m-cta-explore button {
+  place-self: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+  width: fit-content;
+  padding: 0;
+  cursor: pointer;
+}
+body .ctn main .m-cta-explore button p {
+  font-size: 16px;
+  color: white;
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+  border-radius: 25px;
+  padding: 13px 18.75px;
+  margin: 0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+}
+body .ctn main .m-list-operation {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: relative;
+}
+body .ctn main .m-list-operation h2 {
+  font-size: 24px;
+  padding-left: 20px;
+}
+body .ctn main .m-list-operation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  padding: 0 20px;
+}
+body .ctn main .m-list-operation ul li {
+  display: flex;
+  align-items: center;
+}
+body .ctn main .m-list-operation ul li .m-list-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356dc;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 7.5px;
+}
+body .ctn main .m-list-operation ul li div {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  width: 100%;
+  padding: 8px 30px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+}
+body .ctn main .m-restaurants {
+  margin: 64px 0;
+  padding: 0 17px;
+}
+body .ctn main .m-restaurants .m-restaurants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card {
+  border-radius: 15px;
+  height: 251px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-card-img-ctn {
+  border-radius: 15px 15px 0 0;
+  height: 174px;
+  overflow: hidden;
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-card-img-ctn img {
+  width: 100%;
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-infos div h4, body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-infos div p {
+  margin: 0;
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-infos div h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-infos div p {
+  font-size: 17px;
+}
+body .ctn main .m-restaurants .m-restaurants-list .m-restaurants-card .m-restaurants-infos i {
+  font-size: 24px;
+  padding-right: 10px;
+}
+body .ctn footer {
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px;
+}
+body .ctn footer img {
+  width: 139px;
+  height: 27px;
+  filter: brightness(0) invert(1);
+}
+body .ctn footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+body .ctn footer ul li {
+  font-size: 19px;
+}
+
+/*# sourceMappingURL=styles.css.map */
