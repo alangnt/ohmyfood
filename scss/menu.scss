@@ -1,0 +1,276 @@
+/* Colors */
+$primary: #353535;
+$secondary: #eaeaea;
+$tertiary: #f6f6f6;
+$button-primary: #9356dc;
+$button-secondary: #ff79da;
+$button-tertiary: #99e2d0;
+
+/* Font sizes */
+$sm: 14px;
+$md: 16px;
+$lg: 18px;
+$xl: 24px;
+
+html, body, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  .ctn {
+    place-self: center;
+    overflow-x: hidden;
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 63px;
+      width: 100%;
+
+      a {
+        position: absolute;
+        color: $primary;
+        left: 36px;
+        font-size: 24px;
+      }
+
+      h1 {
+        font-family: "Shrikhand", serif;
+        font-size: 30px;
+        font-weight: 400;
+      }
+    }
+
+    main {
+      width: 100%;
+
+      .m-hero-ctn {
+        width: 100%;
+        margin-bottom: -60px;
+        z-index: 1;
+
+        @media screen and (min-width: 1024px) {
+          display: flex;
+          align-items: center;
+          height: 380px;
+          overflow: hidden;
+        }
+
+        .m-hero-img {
+          width: 100%;
+        }
+      }
+
+      .m-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-color: $tertiary;
+        padding: 40px 15px;
+        z-index: 2;
+        border-radius: 40px 40px 0 0;
+        position: relative;
+        width: 100%;
+
+        @media screen and (min-width: 1024px) {
+          place-self: center;
+          width: 1055px;
+        }
+
+        .m-menu-title {
+          display: flex;
+          align-items: center;
+
+          @media screen and (min-width: 1024px) {
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+          }
+
+          h2 {
+            font-family: "Shrikhand", serif;
+            font-size: 28px;
+            font-weight: 400;
+
+            @media screen and (min-width: 1024px) {
+              text-align: center;
+            }
+          }
+
+          img {
+            width: 24px;
+            position: absolute;
+            right: 50px;
+
+            @media screen and (min-width: 1024px) {
+              right: 325px;
+            }
+          }
+
+          .liked1, .liked2, .liked3, .liked4 {
+            opacity: 0;
+            z-index: 2;
+            transition: opacity 0.2s ease;
+            &:hover {
+              opacity: 1;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .m-menu-list {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          @media screen and (min-width: 1024px) {
+            width: 60%;
+            place-self: center;
+          }
+
+          .m-menu-list-title {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h3 {
+              font-size: $md;
+              font-weight: 300;
+            }
+
+            .m-under-title {
+              width: 40px;
+              border: 2px solid $button-tertiary;
+            }
+          }
+
+          .m-menu-card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .m-menu-card {
+              display: flex;
+              justify-content: space-between;
+              padding: 15px;
+              background-color: white;
+              box-shadow: 0 4.01px 15.04px 0 #0000001A;
+              border-radius: 15px;
+
+              .m-menu-card-info {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                h4 {
+                  font-size: $lg;
+                  font-weight: bold;
+                }
+              }
+
+              .m-menu-card-price {
+                place-self: end;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+
+        button {
+          place-self: center;
+          font-size: $md;
+          color: white;
+          background: linear-gradient(193.33deg, $button-primary -11.44%, $button-secondary 123.93%);
+          border: none;
+          border-radius: 25px;
+          padding: 0 50px;
+          margin: 0;
+          box-shadow: 0 4px 10px 0 #00000040;
+          transition: all 0.2s ease-in-out;
+          width: fit-content;
+          height: 50px;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            background: linear-gradient(200.64deg, $button-primary -5.2%, $button-secondary 110.74%),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+            box-shadow: 0 4px 15px 0 #00000059;
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: #353535;
+      color: white;
+      padding: 22px 25px;
+
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: end;
+        justify-content: end;
+        gap: 16px;
+        padding: 30px 25px;
+        height: 114px;
+      }
+
+      img {
+        width: 139px;
+        height: 27px;
+        filter: brightness(0) invert(1);
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        list-style: none;
+        padding: 0;
+        margin: 16px 0 0 0;
+
+        @media screen and (min-width: 1024px) {
+          flex-direction: row;
+        }
+
+        li {
+          font-size: 16px;
+
+          .fa-solid {
+            width: 20px;
+          }
+        }
+
+        .f-strong-link {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-weight: 500;
+
+          @media screen and (min-width: 1024px) {
+            gap: 7px;
+          }
+        }
+
+        .f-left-gapped-link {
+          @media screen and (min-width: 1024px) {
+            margin-left: 50px;
+            margin-right: 10px;
+          }
+        }
+
+        .f-right-gapped-link {
+          @media screen and (min-width: 1024px) {
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}
