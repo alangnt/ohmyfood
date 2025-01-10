@@ -136,26 +136,58 @@ body .ctn main .m-menu .m-menu-list .m-menu-card-list {
   flex-direction: column;
   gap: 12px;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card {
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  align-items: center;
+  border-radius: 15px;
   background-color: white;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
-  border-radius: 15px;
+  height: 69px;
+  overflow: hidden;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card .m-menu-card-info {
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn:hover .m-menu-card-check, body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn:hover .m-menu-card .m-menu-card-price {
+  transform: translateX(0);
+}
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+}
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card .m-menu-card-info h4 {
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info h4 {
   font-size: 18px;
   font-weight: bold;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card .m-menu-card-price {
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info h4, body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-price {
   place-self: end;
   font-weight: 700;
+  transform: translateX(60px);
+  transition: all 0.2s ease-in-out;
+}
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  width: 60px;
+  height: 100%;
+  transform: translateX(60px);
+  transition: all 0.2s ease-in-out;
+}
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-check .fa-circle-check {
+  color: white;
+  font-size: 20px;
 }
 body .ctn main .m-menu button {
   place-self: center;
