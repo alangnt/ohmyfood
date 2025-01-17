@@ -11,7 +11,7 @@ html, body, * {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -19,7 +19,7 @@ html, body, * {
   z-index: 1000;
   background-color: rgba(255, 255, 255);
   overflow: hidden;
-  animation: opacity 4s;
+  animation: translate-loader 2s;
   transform: translateX(10000px);
 }
 
@@ -37,19 +37,40 @@ html, body, * {
   100% { transform: rotate(360deg); }
 }
 
-@keyframes opacity {
-  0%
-  {
-    transform: translateX(0px);
-  }
-  75%
-  {
-    transform: translateX(0px);
-  }
-  100%
-  {
-    transform: translateX(10000px);
-  }
+@keyframes translate-loader {
+  0% { transform: translateX(0px); }
+  75% { transform: translateX(0px); }
+  100% { transform: translateX(10000px); }
+}
+
+.m-menu-list-starter {
+  animation: translate-menu-starter 2.5s;
+}
+
+@keyframes translate-menu-starter {
+  0% { transform: translateX(10000px); }
+  75% { transform: translateX(10000px); }
+  100% { transform: translateX(0px); }
+}
+
+.m-menu-list-main-course {
+  animation: translate-menu-main-course 3s;
+}
+
+@keyframes translate-menu-main-course {
+  0% { transform: translateX(10000px); }
+  75% { transform: translateX(10000px); }
+  100% { transform: translateX(0px); }
+}
+
+.m-menu-list-dessert {
+  animation: translate-menu-dessert 3.5s;
+}
+
+@keyframes translate-menu-dessert {
+  0% { transform: translateX(10000px); }
+  75% { transform: translateX(10000px); }
+  100% { transform: translateX(0px); }
 }
 
 body {
