@@ -58,8 +58,8 @@ html, body, * {
 }
 
 @keyframes translate-menu-main-course {
-  0% { transform: translateX(10000px); }
-  75% { transform: translateX(10000px); }
+  0% { transform: translateX(-10000px); }
+  75% { transform: translateX(-10000px); }
   100% { transform: translateX(0px); }
 }
 
