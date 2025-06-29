@@ -6,43 +6,15 @@ html, body, * {
   box-sizing: border-box;
 }
 
-.m-menu-list-starter {
-  animation: translate-menu-starter 0.5s;
-}
-
-@keyframes translate-menu-starter {
-  0% { transform: translateX(10000px); }
-  50% { transform: translateX(10000px); }
-  100% { transform: translateX(0px); }
-}
-
-.m-menu-list-main-course {
-  animation: translate-menu-main-course 1s;
-}
-
-@keyframes translate-menu-main-course {
-  0% { transform: translateX(-10000px); }
-  50% { transform: translateX(-10000px); }
-  100% { transform: translateX(0px); }
-}
-
-.m-menu-list-dessert {
-  animation: translate-menu-dessert 1.5s;
-}
-
-@keyframes translate-menu-dessert {
-  0% { transform: translateX(10000px); }
-  50% { transform: translateX(10000px); }
-  100% { transform: translateX(0px); }
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
+
 body .ctn {
   place-self: center;
   overflow-x: hidden;
 }
+
 body .ctn header {
   display: flex;
   justify-content: center;
@@ -50,25 +22,30 @@ body .ctn header {
   height: 63px;
   width: 100%;
 }
+
 body .ctn header a {
   position: absolute;
   color: #353535;
   left: 36px;
   font-size: 24px;
 }
+
 body .ctn header h1 {
   font-family: "Shrikhand", serif;
   font-size: 30px;
   font-weight: 400;
 }
+
 body .ctn main {
   width: 100%;
 }
+
 body .ctn main .m-hero-ctn {
   width: 100%;
   margin-bottom: -60px;
   z-index: 1;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn main .m-hero-ctn {
     display: flex;
@@ -80,6 +57,7 @@ body .ctn main .m-hero-ctn {
 body .ctn main .m-hero-ctn .m-hero-img {
   width: 100%;
 }
+
 body .ctn main .m-menu {
   display: flex;
   flex-direction: column;
@@ -91,6 +69,7 @@ body .ctn main .m-menu {
   position: relative;
   width: 100%;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn main .m-menu {
     place-self: center;
@@ -101,6 +80,7 @@ body .ctn main .m-menu .m-menu-title {
   display: flex;
   align-items: center;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn main .m-menu .m-menu-title {
     justify-content: center;
@@ -113,6 +93,7 @@ body .ctn main .m-menu .m-menu-title h2 {
   font-size: 28px;
   font-weight: 400;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn main .m-menu .m-menu-title h2 {
     text-align: center;
@@ -123,6 +104,7 @@ body .ctn main .m-menu .m-menu-title img {
   position: absolute;
   right: 50px;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn main .m-menu .m-menu-title img {
     right: 325px;
@@ -133,15 +115,18 @@ body .ctn main .m-menu .m-menu-title .liked1, body .ctn main .m-menu .m-menu-tit
   z-index: 2;
   transition: opacity 0.2s ease;
 }
+
 body .ctn main .m-menu .m-menu-title .liked1:hover, body .ctn main .m-menu .m-menu-title .liked2:hover, body .ctn main .m-menu .m-menu-title .liked3:hover, body .ctn main .m-menu .m-menu-title .liked4:hover {
   opacity: 1;
   cursor: pointer;
 }
+
 body .ctn main .m-menu .m-menu-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn main .m-menu .m-menu-list {
     width: 60%;
@@ -153,72 +138,87 @@ body .ctn main .m-menu .m-menu-list .m-menu-list-title {
   flex-direction: column;
   gap: 5px;
 }
+
 body .ctn main .m-menu .m-menu-list .m-menu-list-title h3 {
   font-size: 16px;
   font-weight: 300;
 }
+
 body .ctn main .m-menu .m-menu-list .m-menu-list-title .m-under-title {
   width: 40px;
   border: 2px solid #99e2d0;
 }
+
 body .ctn main .m-menu .m-menu-list .m-menu-card-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
+
 body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0 4.01px 15.04px 0 rgba(0, 0, 0, 0.1019607843);
   height: 69px;
   overflow: hidden;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn:hover .m-menu-card-check, body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn:hover .m-menu-card .m-menu-card-price {
+
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn:hover .m-menu-card-check, body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn:hover .m-menu-card-price {
   transform: translateX(0);
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 15px;
-}
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info {
+
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-info {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 15px;
+  width: 100%;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info h4 {
+
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-info h4 {
   font-size: 18px;
   font-weight: bold;
+  padding-bottom: 5px;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info h4, body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-info p {
+
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-info h4, body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-info p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card .m-menu-card-price {
+
+body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-price {
   place-self: end;
   font-weight: 700;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  min-width: 60px;
+  width: 60px;
   transform: translateX(60px);
   transition: all 0.2s ease-in-out;
 }
+
 body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-check {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #99e2d0;
+  min-width: 60px;
   width: 60px;
   height: 100%;
   transform: translateX(60px);
   transition: all 0.2s ease-in-out;
 }
+
 body .ctn main .m-menu .m-menu-list .m-menu-card-list .m-menu-card-ctn .m-menu-card-check .fa-circle-check {
   color: white;
   font-size: 20px;
 }
+
 body .ctn main .m-menu button {
   place-self: center;
   font-size: 16px;
@@ -235,15 +235,18 @@ body .ctn main .m-menu button {
   font-weight: bold;
   cursor: pointer;
 }
+
 body .ctn main .m-menu button:hover {
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.3490196078);
 }
+
 body .ctn footer {
   background-color: #353535;
   color: white;
   padding: 22px 25px;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn footer {
     display: flex;
@@ -260,6 +263,7 @@ body .ctn footer img {
   height: 27px;
   filter: brightness(0) invert(1);
 }
+
 body .ctn footer ul {
   display: flex;
   flex-direction: column;
@@ -268,6 +272,7 @@ body .ctn footer ul {
   padding: 0;
   margin: 16px 0 0 0;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn footer ul {
     flex-direction: row;
@@ -276,15 +281,18 @@ body .ctn footer ul {
 body .ctn footer ul li {
   font-size: 16px;
 }
+
 body .ctn footer ul li .fa-solid {
   width: 20px;
 }
+
 body .ctn footer ul .f-strong-link {
   display: flex;
   align-items: center;
   gap: 12px;
   font-weight: 500;
 }
+
 @media screen and (min-width: 1024px) {
   body .ctn footer ul .f-strong-link {
     gap: 7px;
@@ -301,5 +309,6 @@ body .ctn footer ul .f-strong-link {
     margin-right: 50px;
   }
 }
+
 
 /*# sourceMappingURL=menu.css.map */

@@ -156,47 +156,48 @@ body {
 
             .m-menu-card-ctn {
               display: flex;
-              justify-content: space-between;
-              align-items: center;
               border-radius: 15px;
               background-color: white;
               box-shadow: 0 4.01px 15.04px 0 #0000001A;
               height: 69px;
               overflow: hidden;
 
-              &:hover .m-menu-card-check, &:hover .m-menu-card .m-menu-card-price {
+              &:hover .m-menu-card-check, &:hover .m-menu-card-price {
                 transform: translateX(0);
               }
 
-              .m-menu-card {
+              .m-menu-card-info {
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding-left: 15px;
                 width: 100%;
-                padding: 15px;
 
-                .m-menu-card-info {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 5px;
-
-                  h4 {
-                    font-size: $lg;
-                    font-weight: bold;
-                  }
-
-                  h4, p {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                  }
+                h4 {
+                  font-size: $lg;
+                  font-weight: bold;
+                  padding-bottom: 5px;
                 }
 
-                .m-menu-card-price {
-                  place-self: end;
-                  font-weight: 700;
-                  transform: translateX(60px);
-                  transition: all 0.2s ease-in-out;
+                h4, p {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
                 }
+              }
+
+              .m-menu-card-price {
+                place-self: end;
+                font-weight: 700;
+                padding-bottom: 15px;
+                padding-left: 10px;
+                min-width: 60px;
+                width: 60px;
+                transform: translateX(60px);
+                transition: all 0.2s ease-in-out;
               }
 
               .m-menu-card-check {
@@ -204,6 +205,7 @@ body {
                 align-items: center;
                 justify-content: center;
                 background-color: $button-tertiary;
+                min-width: 60px;
                 width: 60px;
                 height: 100%;
                 transform: translateX(60px);
