@@ -155,14 +155,20 @@ body {
             gap: 12px;
 
             .m-menu-card-ctn {
-              display: flex;
+              display: grid;
+              grid-template-columns: 12fr 1fr;
               border-radius: 15px;
               background-color: white;
               box-shadow: 0 4.01px 15.04px 0 #0000001A;
               height: 69px;
               overflow: hidden;
+              position: relative;
 
-              &:hover .m-menu-card-check, &:hover .m-menu-card-price {
+              &:hover .m-menu-card-price {
+                margin-right: 60px;
+              }
+
+              &:hover .m-menu-card-check {
                 transform: translateX(0);
               }
 
@@ -193,10 +199,10 @@ body {
                 place-self: end;
                 font-weight: 700;
                 padding-bottom: 15px;
-                padding-left: 10px;
+                padding-left: 20px;
                 min-width: 60px;
                 width: 60px;
-                transform: translateX(60px);
+                margin-right: 10px;
                 transition: all 0.2s ease-in-out;
               }
 
@@ -210,6 +216,8 @@ body {
                 height: 100%;
                 transform: translateX(60px);
                 transition: all 0.2s ease-in-out;
+                position: absolute;
+                right: 0;
 
                 .fa-circle-check {
                   color: white;
